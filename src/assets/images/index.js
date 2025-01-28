@@ -1,4 +1,4 @@
-import logo from './vkc-logo.jpg'
+import logo from './vkc-logo.png'
 
 import ic1 from './carousel/ic-1.jpg'
 import ic2 from './carousel/ic-2.jpg'

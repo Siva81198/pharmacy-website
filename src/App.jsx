@@ -1,5 +1,4 @@
-import { Nav } from "./components";
-import Carousel from "./components/Carousel";
+import { Carousel, Nav } from "./components";
 import {
   CustomerReviews,
   Footer,
@@ -13,10 +12,10 @@ const App = () => {
   return (
     <main className='relative'>
       <Nav />
-      <section className='padding mt-12'>
+      <section className='mt-[135px]'>
         <Carousel />
       </section>
-      <section className='bg-slate-50 p-6'>
+      <section className='bg-slate-50 p-8'>
         <PopularProducts />
       </section>
       <section className='padding mt-12'>

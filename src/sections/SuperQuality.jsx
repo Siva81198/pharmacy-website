@@ -12,7 +12,7 @@ const SuperQuality = () => {
         className="flex flex-1 flex-col"
         initial={{ opacity: 0, x: -200 }} // Initial state off-screen from left
         animate={{ opacity: 1, x: 0 }} // Animate to full opacity and centered
-        transition={{ duration: 2, type: "spring", stiffness: 30 }} // Customize timing and easing
+        transition={{ duration: 1, type: "spring", stiffness: 60 }} // Customize timing and easing
       >
         <h2 className="font-palanquin capitalize text-4xl lg:max-w-lg font-bold">
           We Provide You
@@ -47,7 +47,7 @@ const SuperQuality = () => {
           alt="product detail"
           width={570}
           height={522}
-          className="object-contain border-2 border-green-600 rounded-xl shadow-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
+          className="object-contain border-2 border-green-600 rounded-xl shadow-2xl"
         />
       </motion.div>
     </section>

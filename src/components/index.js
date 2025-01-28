@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import PopularProductCard from "./PopularProductCard";
 import ServiceCard from "./ServiceCard";
 import ReviewCard from "./ReviewCard";
+import Carousel from "./Carousel";
 
 export {
     Button,
@@ -10,4 +11,5 @@ export {
     PopularProductCard,
     ServiceCard,
     ReviewCard,
+    Carousel
 }

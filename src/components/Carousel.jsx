@@ -31,10 +31,10 @@ const Carousel = () => {
   }, []); // Run effect only once on initial load
 
   return (
-    <div className="relative w-[90%] h-[20vw] mx-auto overflow-hidden rounded-2xl shadow-lg">
+    <div className="relative w-[90%] h-[25vh] sm:h-[35vh] mx-auto overflow-hidden rounded-2xl shadow-lg">
       {/* Image Wrapper */}
       <div
-        className="flex transition-transform duration-700 ease-in-out"
+        className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
@@ -42,7 +42,7 @@ const Carousel = () => {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-contain flex-shrink-0"
+            className="w-full h-full object-cover flex-shrink-0"
           />
         ))}
       </div>
@@ -52,7 +52,7 @@ const Carousel = () => {
         onClick={handlePrev}
         className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100"
       >
-        <ChevronLeft className="w-6 h-6 text-gray-800" />
+        <ChevronLeft className="w-6 h-6 text-green-600" />
       </button>
 
       {/* Right Arrow */}
@@ -60,7 +60,7 @@ const Carousel = () => {
         onClick={handleNext}
         className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100"
       >
-        <ChevronRight className="w-6 h-6 text-gray-800" />
+        <ChevronRight className="w-6 h-6 text-green-600" />
       </button>
 
       {/* Dot Navigation */}
@@ -70,7 +70,7 @@ const Carousel = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-gray-800" : "bg-gray-400"
+              currentIndex === index ? "bg-green-600" : "bg-gray-400"
             } hover:bg-gray-600`}
           />
         ))}

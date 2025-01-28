@@ -12,22 +12,10 @@ export default {
       "3xl": ["28px", "50px"],
       "4xl": ["48px", "58px"],
       "8xl": ["96px", "106px"],
+      'vw-base': ['4vw', '5vw'],
+      'vw-lg': ['5vw', '6vw'],
     },
     extend: {
-      animation: {
-        "scale-up-down": "scaleUpDown 3s ease-in-out forwards", // Customize duration and infinite loop
-      },
-      keyframes: {
-        scaleUpDown: {
-          "0%, 100%": {
-            transform: "scale(1)",
-          },
-          "50%": {
-            transform: "scale(1.05)", // This can be adjusted for more or less scaling
-          },
-        },
-      },
-
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
@@ -42,12 +30,16 @@ export default {
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
-      backgroundImage: {
-        hero: "url('assets/images/collection-background.svg')",
-        card: "url('assets/images/thumbnail-background.svg')",
+      maxWidth: {
+        'screen-xl': '1440px', // Adds a maximum width for large screens
+        'screen-lg': '1280px',  // Adds a maximum width for smaller large screens
       },
       screens: {
-        wide: "1440px",
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        wide: '1440px',
       },
     },
   },
