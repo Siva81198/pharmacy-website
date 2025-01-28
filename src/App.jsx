@@ -12,10 +12,10 @@ const App = () => {
   return (
     <main className='relative'>
       <Nav />
-      <section className='mt-[135px]'>
+      <section className='mt-[105px]'>
         <Carousel />
       </section>
-      <section className='bg-slate-50 mt-6 mb-6 p-8 lg:p-16'>
+      <section className='bg-slate-50 mt-6 mb-6 p-8 md:px-16'>
         <PopularProducts />
       </section>
       <section className='padding lg:p-16'>
@@ -27,10 +27,10 @@ const App = () => {
       <section className='padding lg:p-16'>
         <SpecialOffer />
       </section>
-      <section className='bg-pale-blue padding'>
+      <section className='bg-pale-blue p-8'>
         <CustomerReviews />
       </section>
-      <section className=' bg-black padding-x pt-10 pb-10'>
+      <section className=' bg-black padding-x pt-4'>
         <Footer />
       </section>
     </main>

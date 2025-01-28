@@ -26,13 +26,13 @@ const PopularProductCard = ({ imgURL, name, price, review }) => {
       }}
       className="flex flex-1 flex-col w-full max-sm:w-full"
     >
-      <img src={imgURL} alt={name} className="w-[242px] h-[242px]" />
+      <img src={imgURL} alt={name} className="w-[242px] h-[242px] md:w-[202px] md:h-[202px]" />
       <div className="mt-8 flex justify-start gap-2">
         <img
           src={starIcon}
           alt="rating icon"
-          width={20}
-          height={18}
+          width={22}
+          height={16}
         />
         <p className="font-montserrat text-sm leading-normal text-slate-gray">
           {review}

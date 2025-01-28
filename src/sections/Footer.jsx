@@ -4,48 +4,51 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="max-container" id="footer">
-      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
-        <div className="flex flex-col items-start">
+    <footer className="max-container p-4 bg-dark-gray text-white text-sm" id="footer">
+      <div className="flex flex-col gap-28 md:flex-row md:justify-between">
+        {/* Logo and Description */}
+        <div className="flex flex-col items-start gap-4 md:w-1/3">
           <a href="/">
             <img
               src={logo}
               alt="logo"
-              width={200}
-              height={86}
+              width={100}
+              height={44}
               className="m-0"
             />
           </a>
-          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
+          <p className="leading-6 text-white-400">
             Get your health essentials ready for the new season at our nearest
-            pharmacy. Find the perfect products for your wellness needs and earn
-            exclusive rewards!
+            pharmacy. Earn exclusive rewards!
           </p>
-          <div className="flex items-center gap-5 mt-8">
+          <div className="flex items-center gap-3">
             {socialMedia.map((icon) => (
               <div
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full transform transition-transform duration-300 ease-in-out hover:scale-95 hover:cursor-pointer"
+                className="flex justify-center items-center w-8 h-8 bg-white rounded-full transition-transform duration-300 hover:scale-90 cursor-pointer"
                 key={icon.alt}
               >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                <img src={icon.src} alt={icon.alt} width={16} height={16} />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+        {/* Links */}
+        <div className="flex flex-wrap justify-between gap-6 md:w-2/3">
           {footerLinks.map((section) => (
-            <div key={section.title}>
-              <h4 className="font-montserrat text-2xl leading-normal font-medium mb-6 text-white">
+            <div key={section.title} className="min-w-[120px]">
+              <h4 className="font-medium mb-2 text-white">
                 {section.title}
               </h4>
-              <ul>
+              <ul className="space-y-1">
                 {section.links.map((link) => (
-                  <li
-                    className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
-                    key={link.name}
-                  >
-                    <a href={link.link}>{link.name}</a>
+                  <li key={link.name}>
+                    <a
+                      href={link.link}
+                      className="text-white-400 hover:text-slate-gray"
+                    >
+                      {link.name}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -54,18 +57,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between text-white-400 mt-8 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+      {/* Bottom Section */}
+      <div className="mt-6 border-t border-white-400 pt-4 flex flex-col items-center md:flex-row md:justify-between">
+        <div className="flex items-center gap-2">
           <img
             src={copyrightSign}
             alt="copyright sign"
-            width={20}
-            height={20}
-            className="rounded-full m-0"
+            width={16}
+            height={16}
           />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="hover:underline mt-2 md:mt-0">Terms & Conditions</p>
       </div>
     </footer>
   );

@@ -130,7 +130,7 @@ export const reviews = [
 ];
 
 export const footerLinks = [
-  {
+/*   {
     title: "Products",
     links: [
       { name: "Baby care", link: "/" },
@@ -147,12 +147,13 @@ export const footerLinks = [
       { name: "About us", link: "/" },
       { name: "FAQs", link: "/" },
     ],
-  },
+  }, */
   {
     title: "Get in touch",
     links: [
       { name: "customersupport@vkc.com", link: "mailto:customersupport@vkc.com" },
       { name: "+1234567890", link: "tel:+1234567890" },
+      { name: " Shop no. 7, Madhav Mahal, Chulna Road, Near Mount Carmel School, Suyog Nagar, Vasai West, MH-401202", link: "#" },
     ],
   },
 ];

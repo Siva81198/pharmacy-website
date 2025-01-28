@@ -6,10 +6,10 @@ const SuperQuality = () => {
   return (
     <section
       id="super-quality"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
+      className="flex justify-around items-center max-lg:flex-col gap-10 lg: gap:2 w-full max-container"
     >
       <motion.div
-        className="flex flex-1 flex-col"
+        className="flex flex-col"
         initial={{ opacity: 0, x: -200 }} // Initial state off-screen from left
         animate={{ opacity: 1, x: 0 }} // Animate to full opacity and centered
         transition={{ duration: 1, type: "spring", stiffness: 60 }} // Customize timing and easing
@@ -37,7 +37,7 @@ const SuperQuality = () => {
       </motion.div>
 
       <motion.div
-        className="flex-1 flex justify-center items-center"
+        className="flex justify-center items-center"
         initial={{ opacity: 0, x: 200 }} // Initial state off-screen from right
         animate={{ opacity: 1, x: 0 }} // Animate to full opacity and centered
         transition={{ duration: 1, type: "spring", stiffness: 60 }} // Customize timing and easing
