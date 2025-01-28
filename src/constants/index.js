@@ -95,7 +95,7 @@ export const products = [
 export const services = [
   {
     imgURL: truckFast,
-    label: "Free Delivery",
+    label: "Free Home Delivery",
     subtext:
       "Get your healthcare essentials delivered to your doorstep at no extra cost.",
   },

@@ -15,16 +15,16 @@ const App = () => {
       <section className='mt-[135px]'>
         <Carousel />
       </section>
-      <section className='bg-slate-50 p-8'>
+      <section className='bg-slate-50 mt-6 mb-6 p-8 lg:p-16'>
         <PopularProducts />
       </section>
-      <section className='padding mt-12'>
+      <section className='padding lg:p-16'>
         <SuperQuality />
       </section>
-      <section className='padding-x py-10 bg-slate-50'>
+      <section className='padding-x py-10 bg-slate-50 lg:p-16'>
         <Services />
       </section>
-      <section className='padding'>
+      <section className='padding lg:p-16'>
         <SpecialOffer />
       </section>
       <section className='bg-pale-blue padding'>

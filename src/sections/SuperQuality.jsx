@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SuperQuality = () => {
   return (
     <section
-      id="about-us"
+      id="super-quality"
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <motion.div
@@ -45,8 +45,8 @@ const SuperQuality = () => {
         <img
           src={superQualityImage}
           alt="product detail"
-          width={570}
-          height={522}
+          width={400}
+          height={350}
           className="object-contain border-2 border-green-600 rounded-xl shadow-2xl"
         />
       </motion.div>
